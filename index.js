@@ -9,8 +9,8 @@ const swiper1 = new Swiper(".mySwiper1", {
 
     breakpoints: {
         767: {
-            spaceBetween: 10,
-            slidesPerView: 3,
+            
+            slidesPerView: 1,
            
             allowTouchMove: true,
         },
