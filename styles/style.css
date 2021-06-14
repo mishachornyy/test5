@@ -691,7 +691,7 @@ width: 100%;
 .menu__item {
   transition-duration: .25s;
 }
-.menu__box {
+.menu__box p {
  font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
