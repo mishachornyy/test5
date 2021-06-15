@@ -20,7 +20,7 @@
   <!--Custom style connect-->
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/media.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -44,7 +44,6 @@
 </div>
 
 <header>
- 
   <div class="container">
     <div class="header">
       <img src="./assets/logo.png" alt="logo img" class="header-logo">
@@ -62,34 +61,38 @@
       <a href="/" class="header-link">
         <img src="./assets/icon-search.png" alt="search icon">
       </a>
-      <div class="hamburger-menu">
-  <input id="menu__toggle" type="checkbox" />
-  <label class="menu__btn" for="menu__toggle">
-    <span></span>
-  </label>
-  <ul class="menu__box">
-    <a href="/" class="menu__item">Понравилось</a>
-
-      <a href="/" class="menu__item">личный кабинет</a>
-
-      <a href="/" class="menu__item">настройки</a>
-
-      <a href="/" class="menu__item">
+      
+      <a href="/" class="header-link_copy">
         <img src="./assets/icon-cart.png" alt="cart icon">
       </a>
 
-      <a href="/" class="menu__item">
+      <a href="/" class="header-link_copy">
         <img src="./assets/icon-search.png" alt="search icon">
       </a>
-      <p> 8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00
-      </p>
-  </ul>
-  
-</div>  
+
+      <button type="button" class="hamburger-trigger" id="hamburger-trigger" onclick="toggleMenu()">
+        <span></span>
+      </button>
+
     </div>
-  
-  
   </div>
+  <ul class="hamburger-list" id="hamburger-list">
+    <li>
+      <a href="/" class="hamburger__item">Понравилось</a>
+    </li>
+    <li>
+      <a href="/" class="hamburger__item">личный кабинет</a>
+    </li>
+    <li>
+      <a href="/" class="hamburger__item">настройки</a>
+    </li>
+    <li>
+      
+      <p>
+        8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00
+      </p>
+    </li>
+  </ul>
 </header>
 
 <main>
@@ -114,40 +117,46 @@
     <h5>СЕЗОН 2020/21</h5>
 
     <hr/>
-     <div class="slider">
-    <div class="collection-example-content mySwiper1">
-     <div class="swiper-wrapper">     
-      <div class="swiper-slide">
-       <div class="card">
-        <div class="card-block">
-          <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
-        <span class="card-title">Louis XVI ATHOS</span>
-       <span class="card-price">165 000 руб.</span>
-     </div>
-      </div> 
-    </div> 
-    <div class="swiper-slide">
-       <div class="card">
-        <div class="card-block">
-          <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
-        <span class="card-title">Louis XVI ATHOS</span>
-       <span class="card-price">165 000 руб.</span>
-     </div>
-      </div> 
-    </div> 
-    <div class="swiper-slide">
-       <div class="card">
-        <div class="card-block">
-          <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
-        <span class="card-title">Louis XVI ATHOS</span>
-       <span class="card-price">165 000 руб.</span>
-     </div>
-      </div> 
-    </div> 
-    </div> 
-     </div> 
-      </div> 
-       </div> 
+
+    <div class="slider">
+      <div class="collection-example-content swiper-container mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-block">
+                <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+                <span class="card-title">Louis XVI ATHOS</span>
+
+                <span class="card-price">165 000 руб.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-block">
+                <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+                <span class="card-title">Louis XVI ATHOS</span>
+
+                <span class="card-price">165 000 руб.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-block">
+                <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+                <span class="card-title">Louis XVI ATHOS</span>
+
+                <span class="card-price">165 000 руб.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="collection_new">
     <h5>Новая коллекция</h5>
@@ -161,21 +170,22 @@
 <div class="collection_old-wrapper">
   <div class="collection_old-content-wrapper">
     <div class="collection_old-content">
-    <h5>КОЛЛЕКЦИЯ 2018</h5>
+      <h5>КОЛЛЕКЦИЯ 2018</h5>
 
-    <hr>
+      <hr>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis
-      amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet
-      convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis
-      ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur
-      auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci
-      pharetra sed diam.
-    </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis
+        amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet
+        convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit
+        quis
+        ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur
+        auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci
+        pharetra sed diam.
+      </p>
 
-    <a href="/" class="collection_old-button">посмотреть коллекцию</a>
-  </div>
+      <a href="/" class="collection_old-button">посмотреть коллекцию</a>
+    </div>
   </div>
 </div>
 
@@ -183,43 +193,123 @@
   <h5>НОВЫЕ ПОСТУПЛЕНИЯ</h5>
 
   <hr>
-          
-   	
- <div class="slider">
-    <div class="collection-example-content mySwiper1">
-     <div class="swiper-wrapper">     
-      <div class="swiper-slide">
-       <div class="card">
-        <div class="card-block">
-          <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
-        <span class="card-title">Louis XVI ATHOS</span>
-       <span class="card-price">165 000 руб.</span>
-     </div>
-      </div> 
-    </div> 
-    <div class="swiper-slide">
-       <div class="card">
-        <div class="card-block">
-          <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
-        <span class="card-title">Louis XVI ATHOS</span>
-       <span class="card-price">165 000 руб.</span>
-     </div>
-      </div> 
-    </div> 
+  
+  <div class="card_container">
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
 
-   <div class="swiper-slide">
-       <div class="card">
-        <div class="card-block">
-          <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
-        <span class="card-title">Louis XVI ATHOS</span>
-       <span class="card-price">165 000 руб.</span>
-     </div>
-      </div> 
-    
-    </div> 
-     </div> 
-      </div> 
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span>
+    </div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span>
+    </div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span>
+    </div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span>
+    </div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span>
+    </div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span></div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span>
+    </div>
+
+    <div class="card">
+      <div class="card-block">
+        <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+      </div>
+
+      <span class="card-title">Louis XVI ATHOS</span>
+
+      <span class="card-price">165 000 руб.</span></div>
   </div>  
+   <div class="ofline">
+  <div class="slider">
+   <div class="collection-example-content swiper-container mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-block">
+              <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+              <span class="card-title">Louis XVI ATHOS</span>
+              <span class="card-price">165 000 руб.</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-block">
+              <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+              <span class="card-title">Louis XVI ATHOS</span>
+              <span class="card-price">165 000 руб.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-block">
+              <img src="./assets/clock-img.png" alt="logo img" class="card-block-img">
+              <span class="card-title">Louis XVI ATHOS</span>
+              <span class="card-price">165 000 руб.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 
 <div class="brands">
@@ -238,8 +328,8 @@
   </div>
 </div>
 
-<div class="footer">
-  <div class="style">
+<footer>
+  <div class="footer-content">
     <div class="magazine">
       <h5>О МАГАЗИНЕ</h5>
 
@@ -282,18 +372,17 @@
       </span>
     </div>
   </div>
-</div>
+</footer>
 
-<div class="end">
-  <div class="exit">
-    <div class="exit_footer">
-      <a class="header-caption-cell">© 2020 Все права защищены</a>
+<div class="copyright-wrapper">
+ <div class="copyrigt-wrap">
+  <div class="copyrigh">
+    <a class="header-caption-cell">© 2020 Все права защищены</a>
 
-      <a class="header-caption-cell">Сделано Figma.info</a>
+    <a class="header-caption-cell">Сделано Figma.info</a>
+  </div>
     </div>
   </div>
-</div>
-
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 
